@@ -2,10 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 const TodoList = () => {
+  const items = ["Coffe Late", "Coffe Premium", "Coffe please"];
   return (
     <ul>
-      <li>Learn React</li>
-      <li>Build Aweson</li>
+      <li>{items[0]}</li>
+      <li>{items[1]}</li>
+      <li>{items[2]}</li>
     </ul>
   );
 };
@@ -18,14 +20,15 @@ const SearchPanel = () => {
   return <input placeholder="search" />;
 };
 
-const App = () =>{
+const App = () => {
   return (
-     <div>
-    <AppHeader />
-    <SearchPanel />
-    <TodoList />
-  </div>
-  )
-} 
+    <div>
+      <span>{(new Date()).toString()}</span>
+      <AppHeader />
+      <SearchPanel />
+      <TodoList />
+    </div>
+  );
+};
 
-ReactDOM.render(<App/>, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
