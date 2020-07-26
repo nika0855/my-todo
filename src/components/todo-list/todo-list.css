@@ -2,7 +2,3 @@
   padding: .25rem .75rem;
 }
 
-.todo-list-item{
-  display: flex;
-  justify-content: space-between;
-}
